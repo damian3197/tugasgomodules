@@ -26,8 +26,8 @@ type DataMember struct {
 	JudulBuku string
 	LamaPeminjaman int
 }
-func DataPengunjung(){
-	datamember := DataMember{
+func DataPengunjung(DataMember) {
+	datamember := DataMember {
 		Nama: "Damian Sitanggang",
 		StatusMember: false,
 		PinjamBuku: true,
@@ -40,3 +40,26 @@ func DataPengunjung(){
 func (datamember DataMember) CekBuku(buku string) {
 	fmt.Println("Anda meminjam Buku berjudul ", datamember.JudulBuku, "Lama peminjaman", datamember.LamaPeminjaman)
 }
+
+// function multiple return value
+func PowerCal(I int, V int) (int, int) {
+	Power := V * I
+	Resistor := V % I
+	return Power, Resistor
+}
+
+// Anonymous Struct
+func AnonymousDataBuku() {
+	DataBuku := struct {
+	Buku string
+	Judul string
+	StatusBuku bool
+	}{
+		Buku: "Novel",
+		Judul: "Olympus",
+		StatusBuku: true,
+	}
+	fmt.Println(DataBuku)	
+}
+
+
