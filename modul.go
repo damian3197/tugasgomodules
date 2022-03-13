@@ -17,3 +17,22 @@ func Dendabuku(hargaDenda, LamaPeminjaman int) int{
 	denda := hargaDenda * LamaPeminjaman
 	return denda
 	}
+
+// struct
+type DataMember struct {
+	Nama string
+	PinjamBuku bool
+	StatusMember bool
+	JudulBuku string
+	LamaPeminjaman int
+}
+func DataPengunjung(){
+	datamember := DataMember{
+		Nama: "Damian Sitanggang",
+		StatusMember: false,
+		PinjamBuku: true,
+		JudulBuku: "Buku Sains",
+		LamaPeminjaman: 5,
+	}
+	fmt.Println(datamember)
+}
