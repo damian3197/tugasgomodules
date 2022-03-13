@@ -13,8 +13,8 @@ func Verifikasi(namaDepan string, namaBelakang string) {
 }
 
 // funtion dengan return value
-func Dendabuku(hargaDenda, LamaPeminjaman int) int{
-	denda := hargaDenda * LamaPeminjaman
+func Dendabuku(hargaDenda, haripeminjaman int) int{
+	denda := hargaDenda * haripeminjaman
 	return denda
 	}
 
