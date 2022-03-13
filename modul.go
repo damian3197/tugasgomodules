@@ -1,0 +1,3 @@
+package modul
+
+import "fmt"
