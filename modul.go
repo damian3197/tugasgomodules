@@ -13,8 +13,8 @@ func Verifikasi(namaDepan string, namaBelakang string) {
 }
 
 // funtion dengan return value
-func Dendabuku(hargaDenda, haripeminjaman int) int{
-	denda := hargaDenda * haripeminjaman
+func Dendabuku(hargaDenda, jumlahhari int) int{
+	denda := hargaDenda * jumlahhari
 	return denda
 	}
 
@@ -38,7 +38,7 @@ func DataPengunjung(DataMember) {
 }
 // struct Method
 func (datamember DataMember) CekBuku(buku string) {
-	fmt.Println("Anda meminjam Buku berjudul ", datamember.JudulBuku, "Lama peminjaman", datamember.LamaPeminjaman)
+	fmt.Println("Anda meminjam Buku berjudul ", datamember.JudulBuku)
 }
 
 // function multiple return value
