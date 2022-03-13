@@ -36,3 +36,7 @@ func DataPengunjung(){
 	}
 	fmt.Println(datamember)
 }
+// struct Method
+func (datamember DataMember) CekBuku(buku string) {
+	fmt.Println("Anda meminjam Buku berjudul ", datamember.JudulBuku, "Lama peminjaman", datamember.LamaPeminjaman)
+}
